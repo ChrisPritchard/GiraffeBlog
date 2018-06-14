@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header, footer, nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1em;
+    margin-right: 1em;
+    display: inline;
+}
+
+.content, header, footer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h5 {
+    margin-top: -1.5em;
+    margin-bottom: 0.5em;
+}
+
+h5 a {
+    margin-left: 1em;
+}
+
+.archive-month {
+    float: left;
+    margin-right: 2em;
+}
+
+.archive-month ul {
+    list-style: none;
+    padding: 0;
+}
+
+.archive-month ul li {
+    margin-left: 0;
+}
+
+.after-archive-months {
+    clear: both;
+}
+
+div.editor {
+    min-height: 400px;
+    border: 1px solid black;
+}
+
+fieldset {
+    border: 0;
+}
+
+fieldset label, fieldset input {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.inline {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.inline label, .inline input {
+    display: inline
+}
+
+.inline label {
+    margin-right: 1em;
+}
+
+span.error-message {
+    display: block;
+    color: red;
+}
