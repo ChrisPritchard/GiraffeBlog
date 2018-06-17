@@ -168,7 +168,7 @@ let search isAuthor (results: Data.Post list option) =
             h3 [] [ rawText "Results" ]
             r |> List.map (fun post -> 
                 li [] [
-                    h4 [] [ rawText post.Title ]
+                    a [ _href <| sprintf "/post/%s" post.Key ] [ h4 [] [ rawText post.Title ] ]
                     p [] [ rawText post.Content ]
                     span [] [ sprintf "Posted by %s on %O" post.Author.DisplayName post.Date |> rawText ]
                 ]) |> ul []

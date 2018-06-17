@@ -107,7 +107,7 @@ let month (monthName, year) =
 
 let private trimToSearchTerm (term:string) content =
     let stripped = Regex.Replace(content, "<[^>]*>", "")
-    let index = stripped.IndexOf(term)
+    let index = stripped.ToLower().IndexOf(term.ToLower())
     match index with 
     | -1 -> ""
     | _ -> 
