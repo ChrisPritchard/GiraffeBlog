@@ -59,7 +59,7 @@ let latest isAuthor posts page =
 
 let private comment (c : Data.Comment) = [
         b [] [ sprintf "%s. %O" c.Author c.Date |> rawText ]
-        p [] [ rawText c.Content ] 
+        p [] [ encodedText c.Content ] 
     ]
 
 type CommentsError = | NoCommentError | RequiredCommentFields | InvalidCommentContent
