@@ -4,13 +4,13 @@ This is the slightly trimmed down source code of my personal website, minus one 
 
 The tech stack for this is:
 
-- Giraffe (1.1.0)
-- Dotnet Core (2.1.0)
+- Giraffe (3.6.0)
+- Dotnet Core (2.2)
 - Entity Framework Core
 
 Thats it. Oh, a little custom css to make it look partially presentable, and a javascript file for editor functionality (autosave, html editing etc). Clean, simple and straight forward. All view html is created using the GiraffeViewEngine in the Views.fs file, something which is neat but which made debugging a bit tricky and so I am not sure I would recommend it. Does keep the publish footprint tight however.
 
-To run this you will need MS SQL Server, either on prem or the Azure version (I've used both during development, and SQL Azure is what is used in production). This DB needs to have tables matching the schema presented in Data.fs: three tables for posts, comments and authors (users). Speaking of the last, authors have a password field that should be the combination of a cryptographically strong salt and a hashed password with that salt, the hashing being SHA384. The verification code in Data.fs should should help in reverse engineering the creation - otherwise ping me if you need help / care. The code is simple enough.
+The system is configured to use Sqlite as a backend store, but will work fine with any other database technology supported by EF Core (originally I was using SQL Server in Azure, for example, with almost no code changes between now and then). This Sqlite db will be created on first launch by [this line](https://github.com/ChrisPritchard/GiraffeBlog/blob/master/src/GiraffeBlog.Web/Handlers.fs#L34). To set passwords for users, you can use the password generator console app under tools. The app generates a portion of an update script for updating a given user account using the [Sqlite3 CLI tool](https://sqlite.org/cli.html) - that tool is also quite useful for creating other data. Please ping me if you have any problems with this, cheers.
 
 ## Features
 
