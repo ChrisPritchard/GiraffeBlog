@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{63D04956-0FB8-461E-9EA0-9D322AE17F44}"
 EndProject
@@ -10,9 +10,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{0E92143D-E594-4BC7-8CB5-2A2135542726}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		readme.md = readme.md
 		license = license
+		readme.md = readme.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{33749F0F-37DB-4565-80D7-E2CDE987A357}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "PasswordGenerator", "tools\PasswordGenerator\PasswordGenerator.fsproj", "{53AB0E90-630F-47D2-A75A-AC034ECDD18E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,12 +40,25 @@ Global
 		{45147B1E-051C-42B5-8682-257CC7AAC3ED}.Release|x64.Build.0 = Release|Any CPU
 		{45147B1E-051C-42B5-8682-257CC7AAC3ED}.Release|x86.ActiveCfg = Release|Any CPU
 		{45147B1E-051C-42B5-8682-257CC7AAC3ED}.Release|x86.Build.0 = Release|Any CPU
+		{53AB0E90-630F-47D2-A75A-AC034ECDD18E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53AB0E90-630F-47D2-A75A-AC034ECDD18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53AB0E90-630F-47D2-A75A-AC034ECDD18E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{53AB0E90-630F-47D2-A75A-AC034ECDD18E}.Debug|x64.Build.0 = Debug|Any CPU
+		{53AB0E90-630F-47D2-A75A-AC034ECDD18E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{53AB0E90-630F-47D2-A75A-AC034ECDD18E}.Debug|x86.Build.0 = Debug|Any CPU
+		{53AB0E90-630F-47D2-A75A-AC034ECDD18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53AB0E90-630F-47D2-A75A-AC034ECDD18E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53AB0E90-630F-47D2-A75A-AC034ECDD18E}.Release|x64.ActiveCfg = Release|Any CPU
+		{53AB0E90-630F-47D2-A75A-AC034ECDD18E}.Release|x64.Build.0 = Release|Any CPU
+		{53AB0E90-630F-47D2-A75A-AC034ECDD18E}.Release|x86.ActiveCfg = Release|Any CPU
+		{53AB0E90-630F-47D2-A75A-AC034ECDD18E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{45147B1E-051C-42B5-8682-257CC7AAC3ED} = {63D04956-0FB8-461E-9EA0-9D322AE17F44}
+		{53AB0E90-630F-47D2-A75A-AC034ECDD18E} = {33749F0F-37DB-4565-80D7-E2CDE987A357}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7A897DBE-A544-4A64-9445-B76466B397C0}
