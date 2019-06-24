@@ -27,6 +27,8 @@
   <ItemGroup>
     <PackageReference Include="Giraffe" Version="3.6.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="2.2.4" />
   </ItemGroup>
 
 </Project>

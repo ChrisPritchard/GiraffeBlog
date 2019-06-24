@@ -53,7 +53,7 @@ let main __ =
 
     let configureServices (services : IServiceCollection) =
         let connString = configuration.GetConnectionString("default")
-        services.AddDbContext<Data.BlogData>(fun o -> o.UseSqlServer connString |> ignore) |> ignore
+        services.AddDbContext<Data.BlogData>(fun o -> o.UseSqlite connString |> ignore) |> ignore
         services
             .AddDistributedMemoryCache()
             .AddSession()

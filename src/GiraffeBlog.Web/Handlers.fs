@@ -29,6 +29,10 @@ let latest page =
     fun (next : HttpFunc) (ctx : HttpContext) -> 
         task {
             let data = ctx.GetService<BlogData> ()
+
+            // NOTE: disable the following line if you dont need it. Works best for sqlite
+            data.Database.EnsureCreated () |> ignore
+
             let skipCount = page * 5
             let posts = query {
                 for post in data.FullPosts () do

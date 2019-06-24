@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GiraffeBlog.Web": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ConnectionStrings__default": "Data Source=blog.db"
+      }
+    }
+  }
+}
